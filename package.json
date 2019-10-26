@@ -1,0 +1,26 @@
+{
+  "name": "yarn-starter",
+  "version": "1.0.0",
+  "description": "A simple starter toolkit that could be useful for different types of node.js projects",
+  "main": "index.js",
+  "author": "Fredrik Eklööf <fredrik.ekloof@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "./node_modules/.bin/eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
