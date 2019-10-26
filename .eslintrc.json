@@ -5,5 +5,10 @@
   "env": {
     "node": true
   },
-  "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:jsdoc/recommended"]
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsdoc/recommended",
+    "plugin:jest/recommended"
+  ]
 }
